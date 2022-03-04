@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
-    <title>Document</title>
+    <title>Weather</title>
     <!-- normal css -->
     <link rel="stylesheet" href="style.css" />
     <!-- bootstrap -->
@@ -46,9 +46,17 @@
           src="https://openweathermap.org/img/wn/02d@2x.png"
           alt=""
         />
-        <h1 id="city">Dhaka</h1>
-        <h3>Temp: <span id="temperature">38.06</span> &deg;C</h3>
-        <h1 id="condition" class="lead">Clouds</h1>
+        <h1 id="city" class="text-white">Chittagong</h1>
+        <h3 class="text-white">
+          Temp: <span id="temperature" class="text-white">22.00</span> &deg;C
+        </h3>
+        <h1 id="condition" class="lead text-white">Clouds</h1>
+      </div>
+      <!-- error message -->
+      <div class="d-flex justify-content-center align-item-center">
+        <p id="errorMessage" class="text-danger py-3">
+          Result not found, please try again later...
+        </p>
       </div>
     </div>
     <script src="weather.js"></script>
