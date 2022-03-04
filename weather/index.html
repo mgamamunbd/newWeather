@@ -26,7 +26,7 @@
             id="city-name"
             type="text"
             class="form-control"
-            placeholder="Enter a location for weather..."
+            placeholder="Enter a city name to know the weather..."
           />
           <div>
             <button
@@ -38,8 +38,26 @@
               Search
             </button>
           </div>
+          <button
+            onclick="window.location.reload()"
+            type="button"
+            class="btn btn-primary d-flex justify-content-center px-3"
+          >
+            Reset
+          </button>
         </div>
       </form>
+      <!-- error message -->
+      <div
+        class="d-flex justify-content-center align-item-center position-relative"
+      >
+        <p
+          id="errorMessage"
+          class="text-danger py-3 fw-bold bg-white rounded p-3 position-absolute"
+        >
+          Result not found, please try again later...
+        </p>
+      </div>
       <div class="weather-status text-center">
         <img
           id="weather-icon"
@@ -51,12 +69,6 @@
           Temp: <span id="temperature" class="text-white">22.00</span> &deg;C
         </h3>
         <h1 id="condition" class="lead text-white">Clouds</h1>
-      </div>
-      <!-- error message -->
-      <div class="d-flex justify-content-center align-item-center">
-        <p id="errorMessage" class="text-danger py-3">
-          Result not found, please try again later...
-        </p>
       </div>
     </div>
     <script src="weather.js"></script>
