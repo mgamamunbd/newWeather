@@ -1,0 +1,41 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+body {
+  background: url("bg-image.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+#headerName {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+}
+.container {
+  font-family: "Titillium Web", sans-serif;
+  width: 500px;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 5px;
+  /* border: 1px solid white; */
+}
+#clock {
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(255, 251, 0);
+  text-align: center;
+}
+
+#instruction {
+  font-family: "Titillium Web", sans-serif;
+  color: rgb(255, 251, 0);
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 100px;
+}
