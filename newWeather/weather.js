@@ -5,6 +5,8 @@ document.getElementById("errorMessage").style.display = "none";
 const API_KEY = `7bd1a650d783aca91002f39377e12b0a`;
 const getWeather = () => {
   const city = document.getElementById("city-name").value;
+  // city.textContent = "";
+  console.log(city);
 
   if (!city) {
     displayError();
@@ -12,6 +14,7 @@ const getWeather = () => {
   }
   document.getElementById("errorMessage").style.display = "none";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+  console.log(url);
   fetch(url)
     .then((response) => response.json())
     .then((data) => displayTemperature(data));
@@ -33,7 +36,7 @@ const displayTemperature = (temperature) => {
   const icon = document.getElementById("weather-icon");
   icon.setAttribute("src", urls); //   icon.src = urls;
 };
-
+//clock
 function currentTime() {
   let date = new Date();
   let hh = date.getHours();
